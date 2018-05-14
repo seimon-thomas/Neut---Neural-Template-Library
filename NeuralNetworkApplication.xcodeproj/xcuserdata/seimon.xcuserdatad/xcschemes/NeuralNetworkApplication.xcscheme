@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0500"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8DD76F620486A84900D96B5E"
+               BuildableName = "NeuralNetworkApplication"
+               BlueprintName = "NeuralNetworkApplication"
+               ReferencedContainer = "container:NeuralNetworkApplication.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8DD76F620486A84900D96B5E"
+            BuildableName = "NeuralNetworkApplication"
+            BlueprintName = "NeuralNetworkApplication"
+            ReferencedContainer = "container:NeuralNetworkApplication.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/seimon/Development/NeuralNetworkApplication/build/Release"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8DD76F620486A84900D96B5E"
+            BuildableName = "NeuralNetworkApplication"
+            BlueprintName = "NeuralNetworkApplication"
+            ReferencedContainer = "container:NeuralNetworkApplication.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-U"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-B --train --input=&quot;/Users/seimon/Development/Production/MarketPredictor/Runs/FTSE.2015.02.24/Inputs/5.Training/Rows-10.Range-0.75.Offset-0.15/FTSE.2015.02.24.Rows-10.Range-0.75.Offset-0.15.Inputs.csv&quot; --network=&quot;/Users/seimon/Development/Production/MarketPredictor/Runs/FTSE.2015.02.24/Networks/Inputs-10x92.Hidden-500.Output-92.Gain-0.025.Momentum-0.25/FTSE.2015.02.24.Inputs-10x92.Hidden-500.Output-92.Gain-0.025.Momentum-0.25.xml&quot; --target=&quot;/Users/seimon/Development/Production/MarketPredictor/Runs/FTSE.2015.02.24/Inputs/5.Training/Rows-10.Range-0.75.Offset-0.15/FTSE.2015.02.24.Rows-10.Range-0.75.Offset-0.15.Targets.csv&quot; --error=0.1 --saveevery=200000 --epochsize=90"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--recall --input=&quot;../Data/Inputs/XORInput.csv&quot; --network=&quot;../Data/Networks/XORNetwork_2_5_1/XORNetwork_2_5_1.xml&quot; --output=&quot;../Data/Outputs/XORNetwork_2_5_1Output.csv&quot; --target=&quot;../Data/Targets/XORTargetsScaled.csv&quot; --epochsize=4"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = " -B --train --input=&quot;../Data/Inputs/BulkXORInput.csv&quot; --network=&quot;../Data/Networks/BulkXORNetwork_2_5_1/BulkXORNetwork_2_5_1.xml&quot; --target=&quot;../Data/Targets/XORTargetsScaled.csv&quot; --error=0.001 --saveevery=10000 --epochsize=4"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-P"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--train --input=&quot;../Data/Inputs/FTSE100.Inputs.2011.10.17.small.csv&quot; --network=&quot;../Data/Networks/FTSENetwork_97_2_97/FTSENetwork_97_2_97.xml&quot; --target=&quot;../Data/Targets/FTSE100.Targets.2011.10.17.small.csv&quot; --error=0.1 --saveevery=7000 --epochsize=7"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--create --template=&quot;../Data/Templates/XORNetwork_2_5_1.xml&quot; --network=&quot;../Data/Networks/XORNetwork_2_5_1/XORNetwork_2_5_1.xml&quot;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--train --input=&quot;../Data/Inputs/XORInput.csv&quot; --network=&quot;../Data/Networks/XORNetwork_2_5_1/XORNetwork_2_5_1.xml&quot; --target=&quot;../Data/Targets/XORTargets.csv&quot; --error=0.001 --saveevery=10000 --epochsize=4"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--recall --input=&quot;../Data/Inputs/XORInput.csv&quot; --network=&quot;../Data/Networks/XORNetwork_2_5_1/XORNetwork_2_5_1.xml&quot; --output=&quot;../Data/Outputs/XORNetwork_2_5_1Output.csv&quot; --epochsize=4"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8DD76F620486A84900D96B5E"
+            BuildableName = "NeuralNetworkApplication"
+            BlueprintName = "NeuralNetworkApplication"
+            ReferencedContainer = "container:NeuralNetworkApplication.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

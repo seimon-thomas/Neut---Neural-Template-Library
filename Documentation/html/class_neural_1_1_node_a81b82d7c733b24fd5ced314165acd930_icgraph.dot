@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Neural::Node::onAddConnectionBack",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Neural::Node::addConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#a58ab4ae58a4f4750cf0240c41680d870"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Neural::Node::connect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#a49955ed053b1c7cd7dd348a379e5af74"];
+  Node2 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Neural::Node::exchangeReceivers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#a8759844824a86063bbc117f5a9b9512e"];
+  Node4 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Neural::Node::getConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#ad812d889cfffc34737a79760cfda3c3a"];
+}

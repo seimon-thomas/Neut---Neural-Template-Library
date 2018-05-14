@@ -1,0 +1,102 @@
+\hypertarget{class_neural_1_1_i_receive_from_front_and_back}{
+\section{Neural::IReceiveFromFrontAndBack$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_i_receive_from_front_and_back}\index{Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}}
+}
+
+
+{\ttfamily \#include $<$IReceiveFromFrontAndBack.h$>$}
+
+
+
+Inheritance diagram for Neural::IReceiveFromFrontAndBack$<$ T $>$:
+
+
+Collaboration diagram for Neural::IReceiveFromFrontAndBack$<$ T $>$:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_neural_1_1_i_receive_from_front_and_back_a2ef8f091d92ad81346664da891ddba78}{$\sim$IReceiveFromFrontAndBack} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_i_receive_from_front_and_back_afa3a6ff397a94056669e42184f6ada33}{receiveFromFront} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)=0
+\item 
+virtual void \hyperlink{class_neural_1_1_i_receive_from_front_and_back_ae1f573476636f59aea5c862eb58479e5}{receiveFromBack} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_i_receive_from_front_and_back_a9bfea87122b8b5dc93ac720a291e36ee}{IReceiveFromFrontAndBack} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::IReceiveFromFrontAndBack$<$ T $>$}
+
+
+
+Definition at line 24 of file IReceiveFromFrontAndBack.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_i_receive_from_front_and_back_a2ef8f091d92ad81346664da891ddba78}{
+\index{Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}!$\sim$IReceiveFromFrontAndBack@{$\sim$IReceiveFromFrontAndBack}}
+\index{$\sim$IReceiveFromFrontAndBack@{$\sim$IReceiveFromFrontAndBack}!Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}}
+\subsubsection[{$\sim$IReceiveFromFrontAndBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf Neural::IReceiveFromFrontAndBack}$<$ T $>$::$\sim${\bf IReceiveFromFrontAndBack} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_i_receive_from_front_and_back_a2ef8f091d92ad81346664da891ddba78}
+
+
+Definition at line 27 of file IReceiveFromFrontAndBack.h.
+
+\hypertarget{class_neural_1_1_i_receive_from_front_and_back_a9bfea87122b8b5dc93ac720a291e36ee}{
+\index{Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}!IReceiveFromFrontAndBack@{IReceiveFromFrontAndBack}}
+\index{IReceiveFromFrontAndBack@{IReceiveFromFrontAndBack}!Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}}
+\subsubsection[{IReceiveFromFrontAndBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Neural::IReceiveFromFrontAndBack}$<$ T $>$::{\bf IReceiveFromFrontAndBack} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{class_neural_1_1_i_receive_from_front_and_back_a9bfea87122b8b5dc93ac720a291e36ee}
+
+
+Definition at line 33 of file IReceiveFromFrontAndBack.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_i_receive_from_front_and_back_ae1f573476636f59aea5c862eb58479e5}{
+\index{Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}!receiveFromBack@{receiveFromBack}}
+\index{receiveFromBack@{receiveFromBack}!Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}}
+\subsubsection[{receiveFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual void {\bf Neural::IReceiveFromFrontAndBack}$<$ T $>$::receiveFromBack (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_neural_1_1_i_receive_from_front_and_back_ae1f573476636f59aea5c862eb58479e5}
+
+
+Implemented in \hyperlink{class_neural_1_1_node_pass_through_af9ddefb5fa4d40e26b468913302dcb95}{Neural::NodePassThrough$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_training_afe3d66a4f1149b7df640b99dc1919f28}{Neural::NodePerceptronTraining$<$ T $>$}, \hyperlink{class_neural_1_1_node_result_a1deab1f035caeb6a4ace28253bea2211}{Neural::NodeResult$<$ T, V $>$}, \hyperlink{class_neural_1_1_receive_from_back_afe67c2ff517cd4a58dec621ef326e037}{Neural::ReceiveFromBack$<$ T $>$}, and \hyperlink{class_neural_1_1_receive_from_front_and_back_aedc1e9175278a87a6b5954b727669d4b}{Neural::ReceiveFromFrontAndBack$<$ T $>$}.
+
+\hypertarget{class_neural_1_1_i_receive_from_front_and_back_afa3a6ff397a94056669e42184f6ada33}{
+\index{Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}!receiveFromFront@{receiveFromFront}}
+\index{receiveFromFront@{receiveFromFront}!Neural::IReceiveFromFrontAndBack@{Neural::IReceiveFromFrontAndBack}}
+\subsubsection[{receiveFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual void {\bf Neural::IReceiveFromFrontAndBack}$<$ T $>$::receiveFromFront (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_neural_1_1_i_receive_from_front_and_back_afa3a6ff397a94056669e42184f6ada33}
+
+
+Implemented in \hyperlink{class_neural_1_1_node_pass_through_af138e9aa6b5de64431e0298b7622b790}{Neural::NodePassThrough$<$ T $>$}, \hyperlink{class_neural_1_1_node_result_afd1b253dbb0645b3ae0523ebd37b8d1e}{Neural::NodeResult$<$ T, V $>$}, \hyperlink{class_neural_1_1_receive_from_front_aa460db39ebf7cb6858ce070e9f988174}{Neural::ReceiveFromFront$<$ T $>$}, and \hyperlink{class_neural_1_1_receive_from_front_and_back_af483f1dfff9288b62c4324f973ca917b}{Neural::ReceiveFromFrontAndBack$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_i_receive_from_front_and_back_8h}{IReceiveFromFrontAndBack.h}\end{DoxyCompactItemize}

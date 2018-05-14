@@ -1,0 +1,154 @@
+\hypertarget{class_neural_1_1_receiver_wrapper}{
+\section{Neural::ReceiverWrapper$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_receiver_wrapper}\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+}
+
+
+{\ttfamily \#include $<$ReceiverWrapper.h$>$}
+
+
+
+Inheritance diagram for Neural::ReceiverWrapper$<$ T $>$:
+
+
+Collaboration diagram for Neural::ReceiverWrapper$<$ T $>$:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_receiver}{IReceiver}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_receiver_wrapper_a61df61d86bfd812cee8ad6feef89cfa6}{IReceiverPtr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_receiver_wrapper_a79023dd16ebc30708eb1fed516679a45}{ReceiverWrapper} ()
+\item 
+virtual \hyperlink{class_neural_1_1_receiver_wrapper_a1674b88fe0c2e7c43bf6e9348a7ae116}{$\sim$ReceiverWrapper} ()
+\item 
+void \hyperlink{class_neural_1_1_receiver_wrapper_abd3ca35c44db475581366acfa9afb4c6}{replaceReceiver} (\hyperlink{class_neural_1_1_receiver_wrapper_a61df61d86bfd812cee8ad6feef89cfa6}{IReceiverPtr} pReceiver)
+\item 
+virtual void \hyperlink{class_neural_1_1_receiver_wrapper_a81f65c6cb6dcb955ef7fb5b7b5acdbf3}{onReceive} (T inputValue)
+\item 
+virtual void \hyperlink{class_neural_1_1_receiver_wrapper_ab6bd2eba1f01c407a6a0004ad4c532aa}{onActivate} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_receiver_wrapper_a61df61d86bfd812cee8ad6feef89cfa6}{IReceiverPtr} \hyperlink{class_neural_1_1_receiver_wrapper_a92d01ac940e30ceccafb4c247a29ba55}{m\_\-pReceiver}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::ReceiverWrapper$<$ T $>$}
+
+
+
+Definition at line 22 of file ReceiverWrapper.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_neural_1_1_receiver_wrapper_a61df61d86bfd812cee8ad6feef89cfa6}{
+\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}!IReceiverPtr@{IReceiverPtr}}
+\index{IReceiverPtr@{IReceiverPtr}!Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+\subsubsection[{IReceiverPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf IReceiver}$<$T$>$ $>$ {\bf Neural::ReceiverWrapper}$<$ T $>$::{\bf IReceiverPtr}}}
+\label{class_neural_1_1_receiver_wrapper_a61df61d86bfd812cee8ad6feef89cfa6}
+
+
+Definition at line 25 of file ReceiverWrapper.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_receiver_wrapper_a79023dd16ebc30708eb1fed516679a45}{
+\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}!ReceiverWrapper@{ReceiverWrapper}}
+\index{ReceiverWrapper@{ReceiverWrapper}!Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+\subsubsection[{ReceiverWrapper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Neural::ReceiverWrapper}$<$ T $>$::{\bf ReceiverWrapper} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_receiver_wrapper_a79023dd16ebc30708eb1fed516679a45}
+
+
+Definition at line 27 of file ReceiverWrapper.h.
+
+\hypertarget{class_neural_1_1_receiver_wrapper_a1674b88fe0c2e7c43bf6e9348a7ae116}{
+\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}!$\sim$ReceiverWrapper@{$\sim$ReceiverWrapper}}
+\index{$\sim$ReceiverWrapper@{$\sim$ReceiverWrapper}!Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+\subsubsection[{$\sim$ReceiverWrapper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf Neural::ReceiverWrapper}$<$ T $>$::$\sim${\bf ReceiverWrapper} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_receiver_wrapper_a1674b88fe0c2e7c43bf6e9348a7ae116}
+
+
+Definition at line 30 of file ReceiverWrapper.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_receiver_wrapper_ab6bd2eba1f01c407a6a0004ad4c532aa}{
+\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}!onActivate@{onActivate}}
+\index{onActivate@{onActivate}!Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+\subsubsection[{onActivate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::ReceiverWrapper}$<$ T $>$::onActivate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_receiver_wrapper_ab6bd2eba1f01c407a6a0004ad4c532aa}
+
+
+Implements \hyperlink{class_neural_1_1_i_activatable_a37d27ce81d6547e36b32225f7b089350}{Neural::IActivatable}.
+
+
+
+Definition at line 42 of file ReceiverWrapper.h.
+
+\hypertarget{class_neural_1_1_receiver_wrapper_a81f65c6cb6dcb955ef7fb5b7b5acdbf3}{
+\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}!onReceive@{onReceive}}
+\index{onReceive@{onReceive}!Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+\subsubsection[{onReceive}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::ReceiverWrapper}$<$ T $>$::onReceive (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_receiver_wrapper_a81f65c6cb6dcb955ef7fb5b7b5acdbf3}
+
+
+Implements \hyperlink{class_neural_1_1_i_receiver_aa05f65f454efc76604a5e2c5644720fc}{Neural::IReceiver$<$ T $>$}.
+
+
+
+Definition at line 37 of file ReceiverWrapper.h.
+
+\hypertarget{class_neural_1_1_receiver_wrapper_abd3ca35c44db475581366acfa9afb4c6}{
+\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}!replaceReceiver@{replaceReceiver}}
+\index{replaceReceiver@{replaceReceiver}!Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+\subsubsection[{replaceReceiver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Neural::ReceiverWrapper}$<$ T $>$::replaceReceiver (
+\begin{DoxyParamCaption}
+\item[{{\bf IReceiverPtr}}]{pReceiver}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_receiver_wrapper_abd3ca35c44db475581366acfa9afb4c6}
+
+
+Definition at line 32 of file ReceiverWrapper.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_receiver_wrapper_a92d01ac940e30ceccafb4c247a29ba55}{
+\index{Neural::ReceiverWrapper@{Neural::ReceiverWrapper}!m\_\-pReceiver@{m\_\-pReceiver}}
+\index{m\_\-pReceiver@{m\_\-pReceiver}!Neural::ReceiverWrapper@{Neural::ReceiverWrapper}}
+\subsubsection[{m\_\-pReceiver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf IReceiverPtr} {\bf Neural::ReceiverWrapper}$<$ T $>$::{\bf m\_\-pReceiver}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_receiver_wrapper_a92d01ac940e30ceccafb4c247a29ba55}
+
+
+Definition at line 47 of file ReceiverWrapper.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_receiver_wrapper_8h}{ReceiverWrapper.h}\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+\hypertarget{class_neural_1_1_node_receiver}{
+\section{Neural::NodeReceiver$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_node_receiver}\index{Neural::NodeReceiver@{Neural::NodeReceiver}}
+}
+
+
+{\ttfamily \#include $<$NodeReceiver.h$>$}
+
+
+
+Inheritance diagram for Neural::NodeReceiver$<$ T $>$:
+
+
+Collaboration diagram for Neural::NodeReceiver$<$ T $>$:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_node_receiver_a508e8c7ddacc752897c59d670bd2c736}{NodeReceiver} (\hyperlink{class_neural_1_1_i_receive_from_front_and_back}{IReceiveFromFrontAndBack}$<$ T $>$ \&node, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual \hyperlink{class_neural_1_1_node_receiver_af1fe056fec9486681c7045f07e757b13}{$\sim$NodeReceiver} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_receiver_a759e123507a96915d7cf7f4040d07fb8}{onActivate} ()=0
+\item 
+virtual void \hyperlink{class_neural_1_1_node_receiver_a3775af35d7b619c799e377bacf29f0d7}{onReceive} (T inputValue)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_i_receive_from_front_and_back}{IReceiveFromFrontAndBack}$<$ T $>$ \& \hyperlink{class_neural_1_1_node_receiver_aca3afc7c5d6c1b378a95f24a42926586}{m\_\-Node}
+\item 
+\hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} \hyperlink{class_neural_1_1_node_receiver_ad02dfaa1d4d9ba2e2bdef03a4b310282}{m\_\-hConnection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::NodeReceiver$<$ T $>$}
+
+
+
+Definition at line 20 of file NodeReceiver.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_node_receiver_a508e8c7ddacc752897c59d670bd2c736}{
+\index{Neural::NodeReceiver@{Neural::NodeReceiver}!NodeReceiver@{NodeReceiver}}
+\index{NodeReceiver@{NodeReceiver}!Neural::NodeReceiver@{Neural::NodeReceiver}}
+\subsubsection[{NodeReceiver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Neural::NodeReceiver}$<$ T $>$::{\bf NodeReceiver} (
+\begin{DoxyParamCaption}
+\item[{{\bf IReceiveFromFrontAndBack}$<$ T $>$ \&}]{node, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_node_receiver_a508e8c7ddacc752897c59d670bd2c736}
+
+
+Definition at line 23 of file NodeReceiver.h.
+
+\hypertarget{class_neural_1_1_node_receiver_af1fe056fec9486681c7045f07e757b13}{
+\index{Neural::NodeReceiver@{Neural::NodeReceiver}!$\sim$NodeReceiver@{$\sim$NodeReceiver}}
+\index{$\sim$NodeReceiver@{$\sim$NodeReceiver}!Neural::NodeReceiver@{Neural::NodeReceiver}}
+\subsubsection[{$\sim$NodeReceiver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf Neural::NodeReceiver}$<$ T $>$::$\sim${\bf NodeReceiver} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_receiver_af1fe056fec9486681c7045f07e757b13}
+
+
+Definition at line 29 of file NodeReceiver.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_node_receiver_a759e123507a96915d7cf7f4040d07fb8}{
+\index{Neural::NodeReceiver@{Neural::NodeReceiver}!onActivate@{onActivate}}
+\index{onActivate@{onActivate}!Neural::NodeReceiver@{Neural::NodeReceiver}}
+\subsubsection[{onActivate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodeReceiver}$<$ T $>$::onActivate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_neural_1_1_node_receiver_a759e123507a96915d7cf7f4040d07fb8}
+
+
+Implements \hyperlink{class_neural_1_1_i_activatable_a37d27ce81d6547e36b32225f7b089350}{Neural::IActivatable}.
+
+
+
+Implemented in \hyperlink{class_neural_1_1_node_receiver_front_acfc33db027b01410110148bac921ef17}{Neural::NodeReceiverFront$<$ T $>$}, and \hyperlink{class_neural_1_1_node_receiver_back_abf66db2577307ffececae63c7248bb5c}{Neural::NodeReceiverBack$<$ T $>$}.
+
+\hypertarget{class_neural_1_1_node_receiver_a3775af35d7b619c799e377bacf29f0d7}{
+\index{Neural::NodeReceiver@{Neural::NodeReceiver}!onReceive@{onReceive}}
+\index{onReceive@{onReceive}!Neural::NodeReceiver@{Neural::NodeReceiver}}
+\subsubsection[{onReceive}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodeReceiver}$<$ T $>$::onReceive (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_neural_1_1_node_receiver_a3775af35d7b619c799e377bacf29f0d7}
+
+
+Implements \hyperlink{class_neural_1_1_i_receiver_aa05f65f454efc76604a5e2c5644720fc}{Neural::IReceiver$<$ T $>$}.
+
+
+
+Implemented in \hyperlink{class_neural_1_1_node_receiver_front_a7d9e947a159607ad16b98c0a57c2c7cf}{Neural::NodeReceiverFront$<$ T $>$}, and \hyperlink{class_neural_1_1_node_receiver_back_add5216320f1d7f70b328f4ba298d0707}{Neural::NodeReceiverBack$<$ T $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_node_receiver_ad02dfaa1d4d9ba2e2bdef03a4b310282}{
+\index{Neural::NodeReceiver@{Neural::NodeReceiver}!m\_\-hConnection@{m\_\-hConnection}}
+\index{m\_\-hConnection@{m\_\-hConnection}!Neural::NodeReceiver@{Neural::NodeReceiver}}
+\subsubsection[{m\_\-hConnection}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf ConnectionHandle} {\bf Neural::NodeReceiver}$<$ T $>$::{\bf m\_\-hConnection}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_receiver_ad02dfaa1d4d9ba2e2bdef03a4b310282}
+
+
+Definition at line 35 of file NodeReceiver.h.
+
+\hypertarget{class_neural_1_1_node_receiver_aca3afc7c5d6c1b378a95f24a42926586}{
+\index{Neural::NodeReceiver@{Neural::NodeReceiver}!m\_\-Node@{m\_\-Node}}
+\index{m\_\-Node@{m\_\-Node}!Neural::NodeReceiver@{Neural::NodeReceiver}}
+\subsubsection[{m\_\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf IReceiveFromFrontAndBack}$<$T$>$\& {\bf Neural::NodeReceiver}$<$ T $>$::{\bf m\_\-Node}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_receiver_aca3afc7c5d6c1b378a95f24a42926586}
+
+
+Definition at line 34 of file NodeReceiver.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_node_receiver_8h}{NodeReceiver.h}\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+\hypertarget{class_neural_1_1_receive_from_front}{
+\section{Neural::ReceiveFromFront$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_receive_from_front}\index{Neural::ReceiveFromFront@{Neural::ReceiveFromFront}}
+}
+
+
+{\ttfamily \#include $<$ReceiveFromFront.h$>$}
+
+
+
+Inheritance diagram for Neural::ReceiveFromFront$<$ T $>$:
+
+
+Collaboration diagram for Neural::ReceiveFromFront$<$ T $>$:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_connection}{IConnection}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_receive_from_front_abf496040ce9745e7e1fc8274f9492295}{IConnectionPtr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_neural_1_1_receive_from_front_ac1ca99cfa27547074ff55d6c9d12f987}{$\sim$ReceiveFromFront} ()
+\item 
+\hyperlink{class_neural_1_1_receive_from_front_abbb4a0c6b78b7c79caa6c93c753a8849}{ReceiveFromFront} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_receive_from_front_aa460db39ebf7cb6858ce070e9f988174}{receiveFromFront} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_receive_from_front_a7ca8c38ebf9cc2af3cdd04d9e6e20055}{onAddConnectionFront} (\hyperlink{class_neural_1_1_i_node_a5243be0a422bcddc5a71a79920d09fd1}{IConnectionPtr} pConnection)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ublas::vector$<$ T $>$ \hyperlink{class_neural_1_1_receive_from_front_a790fab8f7b2e277153de09ce3fe93d94}{m\_\-FrontInputValues}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::ReceiveFromFront$<$ T $>$}
+
+
+
+Definition at line 25 of file ReceiveFromFront.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_neural_1_1_receive_from_front_abf496040ce9745e7e1fc8274f9492295}{
+\index{Neural::ReceiveFromFront@{Neural::ReceiveFromFront}!IConnectionPtr@{IConnectionPtr}}
+\index{IConnectionPtr@{IConnectionPtr}!Neural::ReceiveFromFront@{Neural::ReceiveFromFront}}
+\subsubsection[{IConnectionPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ typedef boost::shared\_\-ptr$<$ {\bf IConnection}$<$T$>$ $>$ {\bf Neural::ReceiveFromFront}$<$ T $>$::{\bf IConnectionPtr}}}
+\label{class_neural_1_1_receive_from_front_abf496040ce9745e7e1fc8274f9492295}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_ac797b836161befa12cd9897926139c14}{Neural::Node$<$ T $>$}.
+
+
+
+Reimplemented in \hyperlink{class_neural_1_1_node_perceptron_recall_a3810ccef790454bbb05dcb86a1743d30}{Neural::NodePerceptronRecall$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_target_abdb5cb819de661fc83edb4eceb81f7e8}{Neural::NodePerceptronTarget$<$ T $>$}, and \hyperlink{class_neural_1_1_node_perceptron_training_acf502a8079c8e875773ac940986af738}{Neural::NodePerceptronTraining$<$ T $>$}.
+
+
+
+Definition at line 28 of file ReceiveFromFront.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_receive_from_front_ac1ca99cfa27547074ff55d6c9d12f987}{
+\index{Neural::ReceiveFromFront@{Neural::ReceiveFromFront}!$\sim$ReceiveFromFront@{$\sim$ReceiveFromFront}}
+\index{$\sim$ReceiveFromFront@{$\sim$ReceiveFromFront}!Neural::ReceiveFromFront@{Neural::ReceiveFromFront}}
+\subsubsection[{$\sim$ReceiveFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf Neural::ReceiveFromFront}$<$ T $>$::$\sim${\bf ReceiveFromFront} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_receive_from_front_ac1ca99cfa27547074ff55d6c9d12f987}
+
+
+Definition at line 30 of file ReceiveFromFront.h.
+
+\hypertarget{class_neural_1_1_receive_from_front_abbb4a0c6b78b7c79caa6c93c753a8849}{
+\index{Neural::ReceiveFromFront@{Neural::ReceiveFromFront}!ReceiveFromFront@{ReceiveFromFront}}
+\index{ReceiveFromFront@{ReceiveFromFront}!Neural::ReceiveFromFront@{Neural::ReceiveFromFront}}
+\subsubsection[{ReceiveFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Neural::ReceiveFromFront}$<$ T $>$::{\bf ReceiveFromFront} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_receive_from_front_abbb4a0c6b78b7c79caa6c93c753a8849}
+
+
+Definition at line 31 of file ReceiveFromFront.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_receive_from_front_a7ca8c38ebf9cc2af3cdd04d9e6e20055}{
+\index{Neural::ReceiveFromFront@{Neural::ReceiveFromFront}!onAddConnectionFront@{onAddConnectionFront}}
+\index{onAddConnectionFront@{onAddConnectionFront}!Neural::ReceiveFromFront@{Neural::ReceiveFromFront}}
+\subsubsection[{onAddConnectionFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual void {\bf Neural::ReceiveFromFront}$<$ T $>$::onAddConnectionFront (
+\begin{DoxyParamCaption}
+\item[{{\bf IConnectionPtr}}]{pConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_receive_from_front_a7ca8c38ebf9cc2af3cdd04d9e6e20055}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_adcf046af875a065c1568a0fe622bc857}{Neural::Node$<$ T $>$}.
+
+
+
+Reimplemented in \hyperlink{class_neural_1_1_node_perceptron_recall_a5453f4f964b8e9b3883a734edc86266e}{Neural::NodePerceptronRecall$<$ T $>$}, and \hyperlink{class_neural_1_1_node_perceptron_training_aaae9cd584f19ab3a70b5ab1ba90b29c2}{Neural::NodePerceptronTraining$<$ T $>$}.
+
+
+
+Definition at line 41 of file ReceiveFromFront.h.
+
+\hypertarget{class_neural_1_1_receive_from_front_aa460db39ebf7cb6858ce070e9f988174}{
+\index{Neural::ReceiveFromFront@{Neural::ReceiveFromFront}!receiveFromFront@{receiveFromFront}}
+\index{receiveFromFront@{receiveFromFront}!Neural::ReceiveFromFront@{Neural::ReceiveFromFront}}
+\subsubsection[{receiveFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual void {\bf Neural::ReceiveFromFront}$<$ T $>$::receiveFromFront (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_receive_from_front_aa460db39ebf7cb6858ce070e9f988174}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_receive_from_front_and_back_af483f1dfff9288b62c4324f973ca917b}{Neural::ReceiveFromFrontAndBack$<$ T $>$}.
+
+
+
+Definition at line 33 of file ReceiveFromFront.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_receive_from_front_a790fab8f7b2e277153de09ce3fe93d94}{
+\index{Neural::ReceiveFromFront@{Neural::ReceiveFromFront}!m\_\-FrontInputValues@{m\_\-FrontInputValues}}
+\index{m\_\-FrontInputValues@{m\_\-FrontInputValues}!Neural::ReceiveFromFront@{Neural::ReceiveFromFront}}
+\subsubsection[{m\_\-FrontInputValues}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ ublas::vector$<$ T $>$ {\bf Neural::ReceiveFromFront}$<$ T $>$::{\bf m\_\-FrontInputValues}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_receive_from_front_a790fab8f7b2e277153de09ce3fe93d94}
+
+
+Definition at line 48 of file ReceiveFromFront.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_receive_from_front_8h}{ReceiveFromFront.h}\end{DoxyCompactItemize}

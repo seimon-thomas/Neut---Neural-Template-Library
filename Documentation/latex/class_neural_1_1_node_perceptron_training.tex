@@ -1,0 +1,270 @@
+\hypertarget{class_neural_1_1_node_perceptron_training}{
+\section{Neural::NodePerceptronTraining$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_node_perceptron_training}\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+}
+
+
+{\ttfamily \#include $<$NodePerceptronTraining.h$>$}
+
+
+
+Inheritance diagram for Neural::NodePerceptronTraining$<$ T $>$:
+
+
+Collaboration diagram for Neural::NodePerceptronTraining$<$ T $>$:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_node}{INode}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_training_a648d54b9404344efb202207fd40cf769}{INodePtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_connection}{IConnection}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_training_acf502a8079c8e875773ac940986af738}{IConnectionPtr}
+\item 
+typedef \hyperlink{class_neural_1_1_node_perceptron_recall}{NodePerceptronRecall}$<$ T $>$ \hyperlink{class_neural_1_1_node_perceptron_training_a0161b405428cffdd067f35a6cff135ed}{Parent}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_node_perceptron_training_a85701129e9b0049150958135f55b9a08}{NodePerceptronTraining} (boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_perceptron_training_parms}{PerceptronTrainingParms}$<$ T $>$ $>$ pParams)
+\item 
+virtual \hyperlink{class_neural_1_1_node_perceptron_training_a8f4cd195d594617f77b313a3eed9b699}{$\sim$NodePerceptronTraining} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_training_afe3d66a4f1149b7df640b99dc1919f28}{receiveFromBack} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_training_a2b0125c4dd40d69d8c9bd3879484b2af}{activateFromBack} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_training_aaae9cd584f19ab3a70b5ab1ba90b29c2}{onAddConnectionFront} (\hyperlink{class_neural_1_1_i_node_a5243be0a422bcddc5a71a79920d09fd1}{IConnectionPtr} pConnection)
+\item 
+T \hyperlink{class_neural_1_1_node_perceptron_training_a7068fdc1c0648c631696a76f4d3dd589}{calculateDelta} ()
+\item 
+void \hyperlink{class_neural_1_1_node_perceptron_training_a5128e41cd82bac27b65ad8dd6b077623}{prepareBackpropDeltas} (T delta)
+\item 
+void \hyperlink{class_neural_1_1_node_perceptron_training_a4a723d0a265f18392edb3efa3a664562}{updateWeights} (T delta)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_perceptron_training_parms}{PerceptronTrainingParms}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_training_a342301971ab0a2817f0bebe2dbe002b4}{m\_\-pParams}
+\item 
+boost::shared\_\-ptr$<$ ublas::vector$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_training_ae97af6f6af980d423607e1ad69847216}{m\_\-pPreviousWeights}
+\item 
+ublas::vector$<$ T $>$ \hyperlink{class_neural_1_1_node_perceptron_training_a0716f11bf1c185a591ad1ac5e095bc6a}{m\_\-BackInputDeltas}
+\item 
+ublas::vector$<$ T $>$ \hyperlink{class_neural_1_1_node_perceptron_training_a91c47cf8e1f254a72568d0d7988b77d9}{m\_\-FrontOutputDeltas}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::NodePerceptronTraining$<$ T $>$}
+
+
+
+Definition at line 40 of file NodePerceptronTraining.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_training_acf502a8079c8e875773ac940986af738}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!IConnectionPtr@{IConnectionPtr}}
+\index{IConnectionPtr@{IConnectionPtr}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{IConnectionPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf IConnection}$<$T$>$ $>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf IConnectionPtr}}}
+\label{class_neural_1_1_node_perceptron_training_acf502a8079c8e875773ac940986af738}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_perceptron_recall_a3810ccef790454bbb05dcb86a1743d30}{Neural::NodePerceptronRecall$<$ T $>$}.
+
+
+
+Definition at line 44 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a648d54b9404344efb202207fd40cf769}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!INodePtr@{INodePtr}}
+\index{INodePtr@{INodePtr}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{INodePtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf INode}$<$T$>$ $>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf INodePtr}}}
+\label{class_neural_1_1_node_perceptron_training_a648d54b9404344efb202207fd40cf769}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_perceptron_recall_a4c6a00d31ba7b35faf51ead0dcc99e43}{Neural::NodePerceptronRecall$<$ T $>$}.
+
+
+
+Definition at line 43 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a0161b405428cffdd067f35a6cff135ed}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!Parent@{Parent}}
+\index{Parent@{Parent}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{Parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf NodePerceptronRecall}$<$T$>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf Parent}}}
+\label{class_neural_1_1_node_perceptron_training_a0161b405428cffdd067f35a6cff135ed}
+
+
+Definition at line 45 of file NodePerceptronTraining.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_training_a85701129e9b0049150958135f55b9a08}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!NodePerceptronTraining@{NodePerceptronTraining}}
+\index{NodePerceptronTraining@{NodePerceptronTraining}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{NodePerceptronTraining}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf NodePerceptronTraining} (
+\begin{DoxyParamCaption}
+\item[{boost::shared\_\-ptr$<$ {\bf PerceptronTrainingParms}$<$ T $>$ $>$}]{pParams}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a85701129e9b0049150958135f55b9a08}
+
+
+Definition at line 47 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a8f4cd195d594617f77b313a3eed9b699}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!$\sim$NodePerceptronTraining@{$\sim$NodePerceptronTraining}}
+\index{$\sim$NodePerceptronTraining@{$\sim$NodePerceptronTraining}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{$\sim$NodePerceptronTraining}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf Neural::NodePerceptronTraining}$<$ T $>$::$\sim${\bf NodePerceptronTraining} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a8f4cd195d594617f77b313a3eed9b699}
+
+
+Definition at line 54 of file NodePerceptronTraining.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_training_a2b0125c4dd40d69d8c9bd3879484b2af}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!activateFromBack@{activateFromBack}}
+\index{activateFromBack@{activateFromBack}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{activateFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronTraining}$<$ T $>$::activateFromBack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a2b0125c4dd40d69d8c9bd3879484b2af}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_a8c307cb61c6b95103d4ecfc6c569015e}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 70 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a7068fdc1c0648c631696a76f4d3dd589}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!calculateDelta@{calculateDelta}}
+\index{calculateDelta@{calculateDelta}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{calculateDelta}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf Neural::NodePerceptronTraining}$<$ T $>$::calculateDelta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a7068fdc1c0648c631696a76f4d3dd589}
+
+
+Definition at line 115 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_aaae9cd584f19ab3a70b5ab1ba90b29c2}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!onAddConnectionFront@{onAddConnectionFront}}
+\index{onAddConnectionFront@{onAddConnectionFront}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{onAddConnectionFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronTraining}$<$ T $>$::onAddConnectionFront (
+\begin{DoxyParamCaption}
+\item[{{\bf IConnectionPtr}}]{pConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_aaae9cd584f19ab3a70b5ab1ba90b29c2}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_perceptron_recall_a5453f4f964b8e9b3883a734edc86266e}{Neural::NodePerceptronRecall$<$ T $>$}.
+
+
+
+Definition at line 99 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a5128e41cd82bac27b65ad8dd6b077623}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!prepareBackpropDeltas@{prepareBackpropDeltas}}
+\index{prepareBackpropDeltas@{prepareBackpropDeltas}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{prepareBackpropDeltas}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Neural::NodePerceptronTraining}$<$ T $>$::prepareBackpropDeltas (
+\begin{DoxyParamCaption}
+\item[{T}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a5128e41cd82bac27b65ad8dd6b077623}
+
+
+Definition at line 139 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_afe3d66a4f1149b7df640b99dc1919f28}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!receiveFromBack@{receiveFromBack}}
+\index{receiveFromBack@{receiveFromBack}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{receiveFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronTraining}$<$ T $>$::receiveFromBack (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_afe3d66a4f1149b7df640b99dc1919f28}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_receive_from_back_afe67c2ff517cd4a58dec621ef326e037}{Neural::ReceiveFromBack$<$ T $>$}.
+
+
+
+Definition at line 60 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a4a723d0a265f18392edb3efa3a664562}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!updateWeights@{updateWeights}}
+\index{updateWeights@{updateWeights}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{updateWeights}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Neural::NodePerceptronTraining}$<$ T $>$::updateWeights (
+\begin{DoxyParamCaption}
+\item[{T}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a4a723d0a265f18392edb3efa3a664562}
+
+
+Definition at line 154 of file NodePerceptronTraining.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_training_a0716f11bf1c185a591ad1ac5e095bc6a}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!m\_\-BackInputDeltas@{m\_\-BackInputDeltas}}
+\index{m\_\-BackInputDeltas@{m\_\-BackInputDeltas}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{m\_\-BackInputDeltas}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ ublas::vector$<$ T $>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf m\_\-BackInputDeltas}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a0716f11bf1c185a591ad1ac5e095bc6a}
+
+
+Definition at line 192 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a91c47cf8e1f254a72568d0d7988b77d9}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!m\_\-FrontOutputDeltas@{m\_\-FrontOutputDeltas}}
+\index{m\_\-FrontOutputDeltas@{m\_\-FrontOutputDeltas}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{m\_\-FrontOutputDeltas}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ ublas::vector$<$ T $>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf m\_\-FrontOutputDeltas}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a91c47cf8e1f254a72568d0d7988b77d9}
+
+
+Definition at line 193 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_a342301971ab0a2817f0bebe2dbe002b4}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!m\_\-pParams@{m\_\-pParams}}
+\index{m\_\-pParams@{m\_\-pParams}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{m\_\-pParams}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ boost::shared\_\-ptr$<$ {\bf PerceptronTrainingParms}$<$T$>$ $>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf m\_\-pParams}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_a342301971ab0a2817f0bebe2dbe002b4}
+
+
+Definition at line 186 of file NodePerceptronTraining.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_training_ae97af6f6af980d423607e1ad69847216}{
+\index{Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}!m\_\-pPreviousWeights@{m\_\-pPreviousWeights}}
+\index{m\_\-pPreviousWeights@{m\_\-pPreviousWeights}!Neural::NodePerceptronTraining@{Neural::NodePerceptronTraining}}
+\subsubsection[{m\_\-pPreviousWeights}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ boost::shared\_\-ptr$<$ ublas::vector$<$ T $>$ $>$ {\bf Neural::NodePerceptronTraining}$<$ T $>$::{\bf m\_\-pPreviousWeights}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_training_ae97af6f6af980d423607e1ad69847216}
+
+
+Definition at line 190 of file NodePerceptronTraining.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_node_perceptron_training_8h}{NodePerceptronTraining.h}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>053A4E7F-DAF8-4EF1-879D-A86B7876D99A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NeuralNetworkApplication</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>652d2693-bfc0-4854-aebb-969301911c82++694</key>
+		<string>svn+ssh://localhost/Library/Subversion/Repository/NeuralNetworkApplication/trunk/NeuralNetworkApplication</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NeuralNetworkApplication.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>652d2693-bfc0-4854-aebb-969301911c82++694</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>652d2693-bfc0-4854-aebb-969301911c82++694</key>
+		<string>svn+ssh://localhost/Library/Subversion/Repository/NeuralNetworkApplication</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn+ssh://localhost/Library/Subversion/Repository/NeuralNetworkApplication/trunk/NeuralNetworkApplication/NeuralNetworkApplication.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>652d2693-bfc0-4854-aebb-969301911c82++694</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>652d2693-bfc0-4854-aebb-969301911c82++694</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NeuralNetworkApplication</string>
+		</dict>
+	</array>
+</dict>
+</plist>

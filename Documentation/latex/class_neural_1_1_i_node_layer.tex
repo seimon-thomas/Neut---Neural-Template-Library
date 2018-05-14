@@ -1,0 +1,156 @@
+\hypertarget{class_neural_1_1_i_node_layer}{
+\section{Neural::INodeLayer$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_i_node_layer}\index{Neural::INodeLayer@{Neural::INodeLayer}}
+}
+
+
+{\ttfamily \#include $<$INodeLayer.h$>$}
+
+
+
+Inheritance diagram for Neural::INodeLayer$<$ T $>$:
+
+
+Collaboration diagram for Neural::INodeLayer$<$ T $>$:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_node}{INode}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{INodePtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_node_layer}{INodeLayer}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_i_node_layer_a63927dd7063f14e4e8df5d9180c85309}{INodeLayerPtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_connection}{IConnection}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_i_node_layer_ab117db196ffa2ff59c58bc3a4fbdfa09}{IConnectionPtr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_neural_1_1_i_node_layer_a96144758b7a584594924ab1b5ba19c27}{$\sim$INodeLayer} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_i_node_layer_a57007b3b42d7e91384c1054896c9d31f}{addNode} (\hyperlink{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{INodePtr} pNodeToAdd)=0
+\item 
+virtual boost::shared\_\-ptr$<$ std::vector$<$ \hyperlink{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{INodePtr} $>$ $>$ \hyperlink{class_neural_1_1_i_node_layer_af94f37f24b4ab3d9a39696bbfbe4eaad}{getNodes} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_i_node_layer_a37e89a60c902b7cd45a3e29ca4e10479}{INodeLayer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::INodeLayer$<$ T $>$}
+
+
+
+Definition at line 21 of file INodeLayer.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_neural_1_1_i_node_layer_ab117db196ffa2ff59c58bc3a4fbdfa09}{
+\index{Neural::INodeLayer@{Neural::INodeLayer}!IConnectionPtr@{IConnectionPtr}}
+\index{IConnectionPtr@{IConnectionPtr}!Neural::INodeLayer@{Neural::INodeLayer}}
+\subsubsection[{IConnectionPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ typedef boost::shared\_\-ptr$<$ {\bf IConnection}$<$T$>$ $>$ {\bf Neural::INodeLayer}$<$ T $>$::{\bf IConnectionPtr}}}
+\label{class_neural_1_1_i_node_layer_ab117db196ffa2ff59c58bc3a4fbdfa09}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_i_node_a5243be0a422bcddc5a71a79920d09fd1}{Neural::INode$<$ boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ $>$}.
+
+
+
+Definition at line 26 of file INodeLayer.h.
+
+\hypertarget{class_neural_1_1_i_node_layer_a63927dd7063f14e4e8df5d9180c85309}{
+\index{Neural::INodeLayer@{Neural::INodeLayer}!INodeLayerPtr@{INodeLayerPtr}}
+\index{INodeLayerPtr@{INodeLayerPtr}!Neural::INodeLayer@{Neural::INodeLayer}}
+\subsubsection[{INodeLayerPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ typedef boost::shared\_\-ptr$<$ {\bf INodeLayer}$<$T$>$ $>$ {\bf Neural::INodeLayer}$<$ T $>$::{\bf INodeLayerPtr}}}
+\label{class_neural_1_1_i_node_layer_a63927dd7063f14e4e8df5d9180c85309}
+
+
+Definition at line 25 of file INodeLayer.h.
+
+\hypertarget{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{
+\index{Neural::INodeLayer@{Neural::INodeLayer}!INodePtr@{INodePtr}}
+\index{INodePtr@{INodePtr}!Neural::INodeLayer@{Neural::INodeLayer}}
+\subsubsection[{INodePtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ typedef boost::shared\_\-ptr$<$ {\bf INode}$<$T$>$ $>$ {\bf Neural::INodeLayer}$<$ T $>$::{\bf INodePtr}}}
+\label{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_i_node_a4a023c757a685125232f9a18a5c588b6}{Neural::INode$<$ boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ $>$}.
+
+
+
+Reimplemented in \hyperlink{class_neural_1_1_node_perceptron_layer_a17e54e010c5b9ba97031895320275e6c}{Neural::NodePerceptronLayer$<$ T $>$}.
+
+
+
+Definition at line 24 of file INodeLayer.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_i_node_layer_a96144758b7a584594924ab1b5ba19c27}{
+\index{Neural::INodeLayer@{Neural::INodeLayer}!$\sim$INodeLayer@{$\sim$INodeLayer}}
+\index{$\sim$INodeLayer@{$\sim$INodeLayer}!Neural::INodeLayer@{Neural::INodeLayer}}
+\subsubsection[{$\sim$INodeLayer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf Neural::INodeLayer}$<$ T $>$::$\sim${\bf INodeLayer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_i_node_layer_a96144758b7a584594924ab1b5ba19c27}
+
+
+Definition at line 28 of file INodeLayer.h.
+
+\hypertarget{class_neural_1_1_i_node_layer_a37e89a60c902b7cd45a3e29ca4e10479}{
+\index{Neural::INodeLayer@{Neural::INodeLayer}!INodeLayer@{INodeLayer}}
+\index{INodeLayer@{INodeLayer}!Neural::INodeLayer@{Neural::INodeLayer}}
+\subsubsection[{INodeLayer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Neural::INodeLayer}$<$ T $>$::{\bf INodeLayer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{class_neural_1_1_i_node_layer_a37e89a60c902b7cd45a3e29ca4e10479}
+
+
+Definition at line 34 of file INodeLayer.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_i_node_layer_a57007b3b42d7e91384c1054896c9d31f}{
+\index{Neural::INodeLayer@{Neural::INodeLayer}!addNode@{addNode}}
+\index{addNode@{addNode}!Neural::INodeLayer@{Neural::INodeLayer}}
+\subsubsection[{addNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual void {\bf Neural::INodeLayer}$<$ T $>$::addNode (
+\begin{DoxyParamCaption}
+\item[{{\bf INodePtr}}]{pNodeToAdd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_neural_1_1_i_node_layer_a57007b3b42d7e91384c1054896c9d31f}
+
+
+Implemented in \hyperlink{class_neural_1_1_node_perceptron_layer_a8d367ad2d62b565aca6e807d26c75321}{Neural::NodePerceptronLayer$<$ T $>$}.
+
+\hypertarget{class_neural_1_1_i_node_layer_af94f37f24b4ab3d9a39696bbfbe4eaad}{
+\index{Neural::INodeLayer@{Neural::INodeLayer}!getNodes@{getNodes}}
+\index{getNodes@{getNodes}!Neural::INodeLayer@{Neural::INodeLayer}}
+\subsubsection[{getNodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual boost::shared\_\-ptr$<$ std::vector$<$ {\bf INodePtr} $>$ $>$ {\bf Neural::INodeLayer}$<$ T $>$::getNodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{class_neural_1_1_i_node_layer_af94f37f24b4ab3d9a39696bbfbe4eaad}
+
+
+Implemented in \hyperlink{class_neural_1_1_node_perceptron_layer_adb210d898fe61f2e167f228f3d1b2d95}{Neural::NodePerceptronLayer$<$ T $>$}.
+
+
+
+Here is the caller graph for this function:
+
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_i_node_layer_8h}{INodeLayer.h}\end{DoxyCompactItemize}

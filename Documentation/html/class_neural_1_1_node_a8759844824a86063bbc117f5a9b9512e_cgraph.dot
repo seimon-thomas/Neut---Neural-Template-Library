@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Neural::Node::exchangeReceivers",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Neural::Node::addConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#a58ab4ae58a4f4750cf0240c41680d870"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Neural::Node::onAddConnectionBack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#a81b82d7c733b24fd5ced314165acd930"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Neural::Node::onAddConnectionFront",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#adcf046af875a065c1568a0fe622bc857"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Neural::Node::createLocalReceiver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html#a12b755fa8c003fea19c200d53c1a381c"];
+}

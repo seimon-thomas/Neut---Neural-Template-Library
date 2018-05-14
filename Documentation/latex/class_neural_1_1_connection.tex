@@ -1,0 +1,141 @@
+\hypertarget{class_neural_1_1_connection}{
+\section{Neural::Connection$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_connection}\index{Neural::Connection@{Neural::Connection}}
+}
+
+
+{\ttfamily \#include $<$Connection.h$>$}
+
+
+
+Inheritance diagram for Neural::Connection$<$ T $>$:
+
+
+Collaboration diagram for Neural::Connection$<$ T $>$:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_connection_ade932c13cf5868ef6e16f2c189b894e7}{Connection} (boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_receiver}{IReceiver}$<$ T $>$ $>$ pFarReceiver)
+\item 
+virtual \hyperlink{class_neural_1_1_connection_a334f870cff147a4ac90234072d7d42d6}{$\sim$Connection} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_connection_a7bbebdc1dc04739efe9debaaae1fb9b3}{send} (T inputValue)
+\item 
+virtual void \hyperlink{class_neural_1_1_connection_a17ae36edba84a916f2f326699b5bc9c5}{activate} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_connection_a104f60ab7897e1198b85c11b66295c79}{replaceReceiver} (boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_receiver}{IReceiver}$<$ T $>$ $>$ pReceiver)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_receiver}{IReceiver}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_connection_aeeb9c2063e63ff374ce39178f59f9170}{m\_\-pFarReceiver}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::Connection$<$ T $>$}
+
+
+
+Definition at line 21 of file Connection.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_connection_ade932c13cf5868ef6e16f2c189b894e7}{
+\index{Neural::Connection@{Neural::Connection}!Connection@{Connection}}
+\index{Connection@{Connection}!Neural::Connection@{Neural::Connection}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Neural::Connection}$<$ T $>$::{\bf Connection} (
+\begin{DoxyParamCaption}
+\item[{boost::shared\_\-ptr$<$ {\bf IReceiver}$<$ T $>$ $>$}]{pFarReceiver}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_connection_ade932c13cf5868ef6e16f2c189b894e7}
+
+
+Definition at line 24 of file Connection.h.
+
+\hypertarget{class_neural_1_1_connection_a334f870cff147a4ac90234072d7d42d6}{
+\index{Neural::Connection@{Neural::Connection}!$\sim$Connection@{$\sim$Connection}}
+\index{$\sim$Connection@{$\sim$Connection}!Neural::Connection@{Neural::Connection}}
+\subsubsection[{$\sim$Connection}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf Neural::Connection}$<$ T $>$::$\sim${\bf Connection} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_connection_a334f870cff147a4ac90234072d7d42d6}
+
+
+Definition at line 29 of file Connection.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_connection_a17ae36edba84a916f2f326699b5bc9c5}{
+\index{Neural::Connection@{Neural::Connection}!activate@{activate}}
+\index{activate@{activate}!Neural::Connection@{Neural::Connection}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::Connection}$<$ T $>$::activate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_connection_a17ae36edba84a916f2f326699b5bc9c5}
+
+
+Implements \hyperlink{class_neural_1_1_i_activate_a64d6b5c9f9bae812a28e6151f9c78829}{Neural::IActivate}.
+
+
+
+Definition at line 35 of file Connection.h.
+
+\hypertarget{class_neural_1_1_connection_a104f60ab7897e1198b85c11b66295c79}{
+\index{Neural::Connection@{Neural::Connection}!replaceReceiver@{replaceReceiver}}
+\index{replaceReceiver@{replaceReceiver}!Neural::Connection@{Neural::Connection}}
+\subsubsection[{replaceReceiver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::Connection}$<$ T $>$::replaceReceiver (
+\begin{DoxyParamCaption}
+\item[{boost::shared\_\-ptr$<$ {\bf IReceiver}$<$ T $>$ $>$}]{pReceiver}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_connection_a104f60ab7897e1198b85c11b66295c79}
+
+
+Reimplemented in \hyperlink{class_neural_1_1_connection_unattachable_a6a7e892132bf4cb07a4cf681109ed360}{Neural::ConnectionUnattachable$<$ T $>$}, and \hyperlink{class_neural_1_1_connection_attachable_a61c964236a72f64e631aa75c1f4489b1}{Neural::ConnectionAttachable$<$ T $>$}.
+
+
+
+Definition at line 39 of file Connection.h.
+
+\hypertarget{class_neural_1_1_connection_a7bbebdc1dc04739efe9debaaae1fb9b3}{
+\index{Neural::Connection@{Neural::Connection}!send@{send}}
+\index{send@{send}!Neural::Connection@{Neural::Connection}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::Connection}$<$ T $>$::send (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_connection_a7bbebdc1dc04739efe9debaaae1fb9b3}
+
+
+Implements \hyperlink{class_neural_1_1_i_connection_a23bae1760ff52eb93192b7b665d83599}{Neural::IConnection$<$ T $>$}.
+
+
+
+Definition at line 31 of file Connection.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_connection_aeeb9c2063e63ff374ce39178f59f9170}{
+\index{Neural::Connection@{Neural::Connection}!m\_\-pFarReceiver@{m\_\-pFarReceiver}}
+\index{m\_\-pFarReceiver@{m\_\-pFarReceiver}!Neural::Connection@{Neural::Connection}}
+\subsubsection[{m\_\-pFarReceiver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ boost::shared\_\-ptr$<$ {\bf IReceiver}$<$T$>$ $>$ {\bf Neural::Connection}$<$ T $>$::{\bf m\_\-pFarReceiver}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_connection_aeeb9c2063e63ff374ce39178f59f9170}
+
+
+Definition at line 46 of file Connection.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_connection_8h}{Connection.h}\end{DoxyCompactItemize}

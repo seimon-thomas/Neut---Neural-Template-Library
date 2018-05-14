@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ArchiveVersion</key>
+	<real>1</real>
+	<key>CreationDate</key>
+	<date>2011-11-16T18:23:07Z</date>
+	<key>Name</key>
+	<string>NeuralNetworkApplication</string>
+	<key>SchemeName</key>
+	<string>NeuralNetworkApplication</string>
+</dict>
+</plist>

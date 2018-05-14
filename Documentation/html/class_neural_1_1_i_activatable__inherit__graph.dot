@@ -1,0 +1,25 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="Neural::IActivatable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Neural::ActivatableFrontAndBack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_activatable_front_and_back.html"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Neural::ActivatableBack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_activatable_back.html"];
+  Node2 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Neural::ActivatableFront",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_activatable_front.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Neural::IReceiver\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_i_receiver.html"];
+  Node5 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Neural::NodeReceiver\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node_receiver.html"];
+  Node6 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Neural::NodeReceiverBack\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node_receiver_back.html"];
+  Node6 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Neural::NodeReceiverFront\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node_receiver_front.html"];
+  Node5 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Neural::NullReceiver\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_null_receiver.html"];
+  Node5 -> Node10 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Neural::ReceiverWrapper\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_receiver_wrapper.html"];
+}

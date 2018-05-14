@@ -1,0 +1,32 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Neural::NodePerceptronTraining\< T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Neural::NodePerceptronRecall\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node_perceptron_recall.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Neural::ReceiveFromFront\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_receive_from_front.html"];
+  Node4 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Neural::ReceiveFromFrontAndBack\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_receive_from_front_and_back.html"];
+  Node5 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Neural::Node\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_node.html"];
+  Node6 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Neural::IReceiveFromFrontAndBack\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_i_receive_from_front_and_back.html"];
+  Node7 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Neural::INode\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_i_node.html"];
+  Node8 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="boost::enable_shared_from_this\< INode\< T \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classboost_1_1enable__shared__from__this.html"];
+  Node9 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Neural::IActivateProvider",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_i_activate_provider.html"];
+  Node10 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Neural::IActivationFrontAndBack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_i_activation_front_and_back.html"];
+  Node11 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Neural::ActivateProviderFrontAndBack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_activate_provider_front_and_back.html"];
+  Node9 -> Node11 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node11 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Neural::ReceiveFromBack\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_neural_1_1_receive_from_back.html"];
+  Node4 -> Node12 [dir=back,color="midnightblue",fontsize="10",style="solid"];
+}

@@ -1,0 +1,233 @@
+\hypertarget{class_neural_1_1_node_result}{
+\section{Neural::NodeResult$<$ T, V $>$ Class Template Reference}
+\label{class_neural_1_1_node_result}\index{Neural::NodeResult@{Neural::NodeResult}}
+}
+
+
+{\ttfamily \#include $<$NodeResult.h$>$}
+
+
+
+Inheritance diagram for Neural::NodeResult$<$ T, V $>$:
+
+
+Collaboration diagram for Neural::NodeResult$<$ T, V $>$:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_node}{INode}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_result_a709f0bb8f0b486a686967e5b3a2b7142}{INodePtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_receiver}{IReceiver}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_result_aa3b43d495589b9b438ff84d41ac5b00d}{IReceiverPtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_connection}{IConnection}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_result_adff4d0f9fa1cfcafd13113a00b7a3ff7}{IConnectionPtr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_node_result_a8f37d7c3fb4a69576482431a54c00181}{NodeResult} (V \&frontInputValues)
+\item 
+virtual \hyperlink{class_neural_1_1_node_result_a975d911f4be3ec90ab65e198955ff210}{$\sim$NodeResult} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_result_a15262168019626591b80dbb9136bc129}{activateFromFront} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_result_a8666fda8bcd8abe7aa1f60d2ce5ba7cd}{activateFromBack} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_result_afd1b253dbb0645b3ae0523ebd37b8d1e}{receiveFromFront} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_result_a1deab1f035caeb6a4ace28253bea2211}{receiveFromBack} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_result_afab338fad3978f3ec8f088189377ff97}{addConnection} (\hyperlink{class_neural_1_1_i_node_a5243be0a422bcddc5a71a79920d09fd1}{IConnectionPtr} pConnection, \hyperlink{namespace_neural_add871cb0324e8abfb693026afba3a621}{ConnectionSite} direction)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+V \& \hyperlink{class_neural_1_1_node_result_a0e716a846ada58725eda17370bed5a93}{m\_\-FrontInputValues}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, class V$>$class Neural::NodeResult$<$ T, V $>$}
+
+
+
+Definition at line 22 of file NodeResult.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_neural_1_1_node_result_adff4d0f9fa1cfcafd13113a00b7a3ff7}{
+\index{Neural::NodeResult@{Neural::NodeResult}!IConnectionPtr@{IConnectionPtr}}
+\index{IConnectionPtr@{IConnectionPtr}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{IConnectionPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ typedef boost::shared\_\-ptr$<$ {\bf IConnection}$<$T$>$ $>$ {\bf Neural::NodeResult}$<$ T, V $>$::{\bf IConnectionPtr}}}
+\label{class_neural_1_1_node_result_adff4d0f9fa1cfcafd13113a00b7a3ff7}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_ac797b836161befa12cd9897926139c14}{Neural::Node$<$ T $>$}.
+
+
+
+Definition at line 27 of file NodeResult.h.
+
+\hypertarget{class_neural_1_1_node_result_a709f0bb8f0b486a686967e5b3a2b7142}{
+\index{Neural::NodeResult@{Neural::NodeResult}!INodePtr@{INodePtr}}
+\index{INodePtr@{INodePtr}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{INodePtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ typedef boost::shared\_\-ptr$<$ {\bf INode}$<$T$>$ $>$ {\bf Neural::NodeResult}$<$ T, V $>$::{\bf INodePtr}}}
+\label{class_neural_1_1_node_result_a709f0bb8f0b486a686967e5b3a2b7142}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_ae2242f73792c89cebc4403da7b2b1a7e}{Neural::Node$<$ T $>$}.
+
+
+
+Definition at line 25 of file NodeResult.h.
+
+\hypertarget{class_neural_1_1_node_result_aa3b43d495589b9b438ff84d41ac5b00d}{
+\index{Neural::NodeResult@{Neural::NodeResult}!IReceiverPtr@{IReceiverPtr}}
+\index{IReceiverPtr@{IReceiverPtr}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{IReceiverPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ typedef boost::shared\_\-ptr$<$ {\bf IReceiver}$<$T$>$ $>$ {\bf Neural::NodeResult}$<$ T, V $>$::{\bf IReceiverPtr}}}
+\label{class_neural_1_1_node_result_aa3b43d495589b9b438ff84d41ac5b00d}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_a4bce103df3f00eee1582929b882c1bf7}{Neural::Node$<$ T $>$}.
+
+
+
+Definition at line 26 of file NodeResult.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_node_result_a8f37d7c3fb4a69576482431a54c00181}{
+\index{Neural::NodeResult@{Neural::NodeResult}!NodeResult@{NodeResult}}
+\index{NodeResult@{NodeResult}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{NodeResult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ {\bf Neural::NodeResult}$<$ T, V $>$::{\bf NodeResult} (
+\begin{DoxyParamCaption}
+\item[{V \&}]{frontInputValues}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_node_result_a8f37d7c3fb4a69576482431a54c00181}
+
+
+Definition at line 29 of file NodeResult.h.
+
+\hypertarget{class_neural_1_1_node_result_a975d911f4be3ec90ab65e198955ff210}{
+\index{Neural::NodeResult@{Neural::NodeResult}!$\sim$NodeResult@{$\sim$NodeResult}}
+\index{$\sim$NodeResult@{$\sim$NodeResult}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{$\sim$NodeResult}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ virtual {\bf Neural::NodeResult}$<$ T, V $>$::$\sim${\bf NodeResult} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_result_a975d911f4be3ec90ab65e198955ff210}
+
+
+Definition at line 34 of file NodeResult.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_node_result_a8666fda8bcd8abe7aa1f60d2ce5ba7cd}{
+\index{Neural::NodeResult@{Neural::NodeResult}!activateFromBack@{activateFromBack}}
+\index{activateFromBack@{activateFromBack}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{activateFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ virtual void {\bf Neural::NodeResult}$<$ T, V $>$::activateFromBack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_result_a8666fda8bcd8abe7aa1f60d2ce5ba7cd}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_a8c307cb61c6b95103d4ecfc6c569015e}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 42 of file NodeResult.h.
+
+\hypertarget{class_neural_1_1_node_result_a15262168019626591b80dbb9136bc129}{
+\index{Neural::NodeResult@{Neural::NodeResult}!activateFromFront@{activateFromFront}}
+\index{activateFromFront@{activateFromFront}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{activateFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ virtual void {\bf Neural::NodeResult}$<$ T, V $>$::activateFromFront (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_result_a15262168019626591b80dbb9136bc129}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_a5da39bdcc01ca52cc74fbc2ad6a07fe1}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 38 of file NodeResult.h.
+
+\hypertarget{class_neural_1_1_node_result_afab338fad3978f3ec8f088189377ff97}{
+\index{Neural::NodeResult@{Neural::NodeResult}!addConnection@{addConnection}}
+\index{addConnection@{addConnection}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{addConnection}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ virtual void {\bf Neural::NodeResult}$<$ T, V $>$::addConnection (
+\begin{DoxyParamCaption}
+\item[{{\bf IConnectionPtr}}]{pConnection, }
+\item[{{\bf ConnectionSite}}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_result_afab338fad3978f3ec8f088189377ff97}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_a58ab4ae58a4f4750cf0240c41680d870}{Neural::Node$<$ T $>$}.
+
+
+
+Definition at line 62 of file NodeResult.h.
+
+\hypertarget{class_neural_1_1_node_result_a1deab1f035caeb6a4ace28253bea2211}{
+\index{Neural::NodeResult@{Neural::NodeResult}!receiveFromBack@{receiveFromBack}}
+\index{receiveFromBack@{receiveFromBack}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{receiveFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ virtual void {\bf Neural::NodeResult}$<$ T, V $>$::receiveFromBack (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_result_a1deab1f035caeb6a4ace28253bea2211}
+
+
+Implements \hyperlink{class_neural_1_1_i_receive_from_front_and_back_ae1f573476636f59aea5c862eb58479e5}{Neural::IReceiveFromFrontAndBack$<$ T $>$}.
+
+
+
+Definition at line 55 of file NodeResult.h.
+
+\hypertarget{class_neural_1_1_node_result_afd1b253dbb0645b3ae0523ebd37b8d1e}{
+\index{Neural::NodeResult@{Neural::NodeResult}!receiveFromFront@{receiveFromFront}}
+\index{receiveFromFront@{receiveFromFront}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{receiveFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ virtual void {\bf Neural::NodeResult}$<$ T, V $>$::receiveFromFront (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_result_afd1b253dbb0645b3ae0523ebd37b8d1e}
+
+
+Implements \hyperlink{class_neural_1_1_i_receive_from_front_and_back_afa3a6ff397a94056669e42184f6ada33}{Neural::IReceiveFromFrontAndBack$<$ T $>$}.
+
+
+
+Definition at line 47 of file NodeResult.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_node_result_a0e716a846ada58725eda17370bed5a93}{
+\index{Neural::NodeResult@{Neural::NodeResult}!m\_\-FrontInputValues@{m\_\-FrontInputValues}}
+\index{m\_\-FrontInputValues@{m\_\-FrontInputValues}!Neural::NodeResult@{Neural::NodeResult}}
+\subsubsection[{m\_\-FrontInputValues}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class V $>$ V\& {\bf Neural::NodeResult}$<$ T, V $>$::{\bf m\_\-FrontInputValues}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_result_a0e716a846ada58725eda17370bed5a93}
+
+
+Definition at line 87 of file NodeResult.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_node_result_8h}{NodeResult.h}\end{DoxyCompactItemize}

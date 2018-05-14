@@ -1,0 +1,319 @@
+\hypertarget{class_neural_1_1_node_perceptron_layer}{
+\section{Neural::NodePerceptronLayer$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_node_perceptron_layer}\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+}
+
+
+{\ttfamily \#include $<$NodePerceptronLayer.h$>$}
+
+
+
+Inheritance diagram for Neural::NodePerceptronLayer$<$ T $>$:
+
+
+Collaboration diagram for Neural::NodePerceptronLayer$<$ T $>$:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_node}{INode}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_layer_a17e54e010c5b9ba97031895320275e6c}{INodePtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_connection}{IConnection}$<$ boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_layer_a846a430dabc450603ae134904a083750}{ILayerConnectionPtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_activate}{IActivate} $>$ \hyperlink{class_neural_1_1_node_perceptron_layer_a9806fd97604fe80f25365bd676329c5c}{IActivatePtr}
+\item 
+typedef \hyperlink{class_neural_1_1_node}{Node}$<$ T $>$ \hyperlink{class_neural_1_1_node_perceptron_layer_a927edb9291ccfeae974e6048221ae34b}{Parent}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_node_perceptron_layer_a192982bd5b7c3cb4ca74a75ceb4c0ecf}{NodePerceptronLayer} ()
+\item 
+virtual \hyperlink{class_neural_1_1_node_perceptron_layer_acca84eea36734c4e0fe42e47ec17f26a}{$\sim$NodePerceptronLayer} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_layer_a617148ef0ebece3a8de899fb776bb7b0}{receiveFromFront} (boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ pInputValues, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_layer_ac2cad7fc962758f610074b89fde23ca1}{receiveFromBack} (boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ pInputValues, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_layer_aa10fa97cf43ca754f12328601fb2d2f6}{activateFromFront} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_layer_ab7d152cd6cb287d145e4a371e1d2d9ca}{activateFromBack} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_layer_a5c3ab08bb312b6ed5d4dff45cdc32b53}{connect} (boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_node}{INode}$<$ boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ $>$ $>$ pNodeToConnect, \hyperlink{namespace_neural_add871cb0324e8abfb693026afba3a621}{ConnectionSite} siteOnThis)
+\item 
+virtual \hyperlink{class_neural_1_1_node_perceptron_layer_a846a430dabc450603ae134904a083750}{ILayerConnectionPtr} \hyperlink{class_neural_1_1_node_perceptron_layer_ab469e7b054d75cbe72482b838071800b}{getConnection} (\hyperlink{namespace_neural_add871cb0324e8abfb693026afba3a621}{ConnectionSite} siteOnThis=INPUTS)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_perceptron_layer_a8d367ad2d62b565aca6e807d26c75321}{addNode} (\hyperlink{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{INodePtr} pNodeToAdd)
+\item 
+virtual boost::shared\_\-ptr$<$ std::vector$<$ \hyperlink{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{INodePtr} $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_layer_adb210d898fe61f2e167f228f3d1b2d95}{getNodes} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_neural_1_1_node_perceptron_layer_a557fefb5139551317e257340a5603e07}{activateConnections} (std::vector$<$ \hyperlink{class_neural_1_1_node_perceptron_layer_a9806fd97604fe80f25365bd676329c5c}{IActivatePtr} $>$ \&activatableConnections)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost::shared\_\-ptr$<$ std::vector$<$ \hyperlink{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{INodePtr} $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_layer_a9439fce206cbf489b864f4c8818c32e5}{m\_\-pLayerNodes}
+\item 
+std::vector$<$ std::vector$<$ \hyperlink{class_neural_1_1_node_perceptron_layer_a9806fd97604fe80f25365bd676329c5c}{IActivatePtr} $>$ $>$ \hyperlink{class_neural_1_1_node_perceptron_layer_a464ec62bde0bc4d28e81042b19d95bbd}{m\_\-ActivationConnections}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::NodePerceptronLayer$<$ T $>$}
+
+
+
+Definition at line 22 of file NodePerceptronLayer.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_layer_a9806fd97604fe80f25365bd676329c5c}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!IActivatePtr@{IActivatePtr}}
+\index{IActivatePtr@{IActivatePtr}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{IActivatePtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf IActivate} $>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::{\bf IActivatePtr}}}
+\label{class_neural_1_1_node_perceptron_layer_a9806fd97604fe80f25365bd676329c5c}
+
+
+Definition at line 27 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_a846a430dabc450603ae134904a083750}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!ILayerConnectionPtr@{ILayerConnectionPtr}}
+\index{ILayerConnectionPtr@{ILayerConnectionPtr}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{ILayerConnectionPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf IConnection}$<$ boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ $>$ $>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::{\bf ILayerConnectionPtr}}}
+\label{class_neural_1_1_node_perceptron_layer_a846a430dabc450603ae134904a083750}
+
+
+Definition at line 26 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_a17e54e010c5b9ba97031895320275e6c}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!INodePtr@{INodePtr}}
+\index{INodePtr@{INodePtr}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{INodePtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf INode}$<$T$>$ $>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::{\bf INodePtr}}}
+\label{class_neural_1_1_node_perceptron_layer_a17e54e010c5b9ba97031895320275e6c}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_i_node_layer_a31357b3a61112d5c534c52693ffba054}{Neural::INodeLayer$<$ T $>$}.
+
+
+
+Definition at line 25 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_a927edb9291ccfeae974e6048221ae34b}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!Parent@{Parent}}
+\index{Parent@{Parent}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{Parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf Node}$<$T$>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::{\bf Parent}}}
+\label{class_neural_1_1_node_perceptron_layer_a927edb9291ccfeae974e6048221ae34b}
+
+
+Definition at line 28 of file NodePerceptronLayer.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_layer_a192982bd5b7c3cb4ca74a75ceb4c0ecf}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!NodePerceptronLayer@{NodePerceptronLayer}}
+\index{NodePerceptronLayer@{NodePerceptronLayer}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{NodePerceptronLayer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::{\bf NodePerceptronLayer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_a192982bd5b7c3cb4ca74a75ceb4c0ecf}
+
+
+Definition at line 30 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_acca84eea36734c4e0fe42e47ec17f26a}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!$\sim$NodePerceptronLayer@{$\sim$NodePerceptronLayer}}
+\index{$\sim$NodePerceptronLayer@{$\sim$NodePerceptronLayer}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{$\sim$NodePerceptronLayer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf Neural::NodePerceptronLayer}$<$ T $>$::$\sim${\bf NodePerceptronLayer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_acca84eea36734c4e0fe42e47ec17f26a}
+
+
+Definition at line 36 of file NodePerceptronLayer.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_layer_a557fefb5139551317e257340a5603e07}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!activateConnections@{activateConnections}}
+\index{activateConnections@{activateConnections}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{activateConnections}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Neural::NodePerceptronLayer}$<$ T $>$::activateConnections (
+\begin{DoxyParamCaption}
+\item[{std::vector$<$ {\bf IActivatePtr} $>$ \&}]{activatableConnections}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_a557fefb5139551317e257340a5603e07}
+
+
+Definition at line 108 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_ab7d152cd6cb287d145e4a371e1d2d9ca}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!activateFromBack@{activateFromBack}}
+\index{activateFromBack@{activateFromBack}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{activateFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronLayer}$<$ T $>$::activateFromBack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_ab7d152cd6cb287d145e4a371e1d2d9ca}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_a8c307cb61c6b95103d4ecfc6c569015e}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 55 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_aa10fa97cf43ca754f12328601fb2d2f6}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!activateFromFront@{activateFromFront}}
+\index{activateFromFront@{activateFromFront}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{activateFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronLayer}$<$ T $>$::activateFromFront (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_aa10fa97cf43ca754f12328601fb2d2f6}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_a5da39bdcc01ca52cc74fbc2ad6a07fe1}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 50 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_a8d367ad2d62b565aca6e807d26c75321}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!addNode@{addNode}}
+\index{addNode@{addNode}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{addNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronLayer}$<$ T $>$::addNode (
+\begin{DoxyParamCaption}
+\item[{{\bf INodePtr}}]{pNodeToAdd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_a8d367ad2d62b565aca6e807d26c75321}
+
+
+Implements \hyperlink{class_neural_1_1_i_node_layer_a57007b3b42d7e91384c1054896c9d31f}{Neural::INodeLayer$<$ T $>$}.
+
+
+
+Definition at line 79 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_a5c3ab08bb312b6ed5d4dff45cdc32b53}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!connect@{connect}}
+\index{connect@{connect}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronLayer}$<$ T $>$::connect (
+\begin{DoxyParamCaption}
+\item[{boost::shared\_\-ptr$<$ {\bf INode}$<$ boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ $>$ $>$}]{pNodeToConnect, }
+\item[{{\bf ConnectionSite}}]{siteOnThis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_a5c3ab08bb312b6ed5d4dff45cdc32b53}
+
+
+Definition at line 60 of file NodePerceptronLayer.h.
+
+
+
+Here is the call graph for this function:
+
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_ab469e7b054d75cbe72482b838071800b}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{getConnection}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf ILayerConnectionPtr} {\bf Neural::NodePerceptronLayer}$<$ T $>$::getConnection (
+\begin{DoxyParamCaption}
+\item[{{\bf ConnectionSite}}]{siteOnThis = {\ttfamily INPUTS}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_ab469e7b054d75cbe72482b838071800b}
+
+
+Implements \hyperlink{class_neural_1_1_i_node_ad9f234039e596afa16d9db6ec778ed5b}{Neural::INode$<$ boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$ $>$}.
+
+
+
+Definition at line 74 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_adb210d898fe61f2e167f228f3d1b2d95}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!getNodes@{getNodes}}
+\index{getNodes@{getNodes}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{getNodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual boost::shared\_\-ptr$<$ std::vector$<$ {\bf INodePtr} $>$ $>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::getNodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_adb210d898fe61f2e167f228f3d1b2d95}
+
+
+Implements \hyperlink{class_neural_1_1_i_node_layer_af94f37f24b4ab3d9a39696bbfbe4eaad}{Neural::INodeLayer$<$ T $>$}.
+
+
+
+Definition at line 96 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_ac2cad7fc962758f610074b89fde23ca1}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!receiveFromBack@{receiveFromBack}}
+\index{receiveFromBack@{receiveFromBack}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{receiveFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronLayer}$<$ T $>$::receiveFromBack (
+\begin{DoxyParamCaption}
+\item[{boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$}]{pInputValues, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_ac2cad7fc962758f610074b89fde23ca1}
+
+
+Definition at line 45 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_a617148ef0ebece3a8de899fb776bb7b0}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!receiveFromFront@{receiveFromFront}}
+\index{receiveFromFront@{receiveFromFront}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{receiveFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePerceptronLayer}$<$ T $>$::receiveFromFront (
+\begin{DoxyParamCaption}
+\item[{boost::shared\_\-ptr$<$ std::vector$<$ T $>$ $>$}]{pInputValues, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_a617148ef0ebece3a8de899fb776bb7b0}
+
+
+Definition at line 40 of file NodePerceptronLayer.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_node_perceptron_layer_a464ec62bde0bc4d28e81042b19d95bbd}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!m\_\-ActivationConnections@{m\_\-ActivationConnections}}
+\index{m\_\-ActivationConnections@{m\_\-ActivationConnections}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{m\_\-ActivationConnections}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ std::vector$<$ std::vector$<$ {\bf IActivatePtr} $>$ $>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::{\bf m\_\-ActivationConnections}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_a464ec62bde0bc4d28e81042b19d95bbd}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_abaaf9f8b1b2711b9c48f5beb33f7cc85}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 106 of file NodePerceptronLayer.h.
+
+\hypertarget{class_neural_1_1_node_perceptron_layer_a9439fce206cbf489b864f4c8818c32e5}{
+\index{Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}!m\_\-pLayerNodes@{m\_\-pLayerNodes}}
+\index{m\_\-pLayerNodes@{m\_\-pLayerNodes}!Neural::NodePerceptronLayer@{Neural::NodePerceptronLayer}}
+\subsubsection[{m\_\-pLayerNodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ boost::shared\_\-ptr$<$ std::vector$<$ {\bf INodePtr} $>$ $>$ {\bf Neural::NodePerceptronLayer}$<$ T $>$::{\bf m\_\-pLayerNodes}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_node_perceptron_layer_a9439fce206cbf489b864f4c8818c32e5}
+
+
+Definition at line 105 of file NodePerceptronLayer.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_node_perceptron_layer_8h}{NodePerceptronLayer.h}\end{DoxyCompactItemize}

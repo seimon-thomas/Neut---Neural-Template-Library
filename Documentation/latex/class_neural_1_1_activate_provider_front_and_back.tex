@@ -1,0 +1,151 @@
+\hypertarget{class_neural_1_1_activate_provider_front_and_back}{
+\section{Neural::ActivateProviderFrontAndBack Class Reference}
+\label{class_neural_1_1_activate_provider_front_and_back}\index{Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}}
+}
+
+
+{\ttfamily \#include $<$ActivateProviderFrontAndBack.h$>$}
+
+
+
+Inheritance diagram for Neural::ActivateProviderFrontAndBack:
+
+
+Collaboration diagram for Neural::ActivateProviderFrontAndBack:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_activate_provider_front_and_back_a639139a9b47f5e90780d57aecfe7cf9b}{ActivateProviderFrontAndBack} ()
+\item 
+virtual \hyperlink{class_neural_1_1_activate_provider_front_and_back_aa318b74f734769f98fbb2c1f90046bf6}{$\sim$ActivateProviderFrontAndBack} ()
+\item 
+virtual \hyperlink{namespace_neural_aa317acf32f01510e99627087e14785c1}{IActivatePtr} \hyperlink{class_neural_1_1_activate_provider_front_and_back_aac88ad8c77a1795521078e16425d3c33}{getActivationConnection} (\hyperlink{namespace_neural_add871cb0324e8abfb693026afba3a621}{ConnectionSite} siteOnThis)
+\item 
+virtual void \hyperlink{class_neural_1_1_activate_provider_front_and_back_a5da39bdcc01ca52cc74fbc2ad6a07fe1}{activateFromFront} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_activate_provider_front_and_back_a8c307cb61c6b95103d4ecfc6c569015e}{activateFromBack} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::vector$<$ \hyperlink{namespace_neural_aa317acf32f01510e99627087e14785c1}{IActivatePtr} $>$ \hyperlink{class_neural_1_1_activate_provider_front_and_back_abaaf9f8b1b2711b9c48f5beb33f7cc85}{m\_\-ActivationConnections}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file ActivateProviderFrontAndBack.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_activate_provider_front_and_back_a639139a9b47f5e90780d57aecfe7cf9b}{
+\index{Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}!ActivateProviderFrontAndBack@{ActivateProviderFrontAndBack}}
+\index{ActivateProviderFrontAndBack@{ActivateProviderFrontAndBack}!Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}}
+\subsubsection[{ActivateProviderFrontAndBack}]{\setlength{\rightskip}{0pt plus 5cm}Neural::ActivateProviderFrontAndBack::ActivateProviderFrontAndBack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_activate_provider_front_and_back_a639139a9b47f5e90780d57aecfe7cf9b}
+
+
+Definition at line 26 of file ActivateProviderFrontAndBack.h.
+
+\hypertarget{class_neural_1_1_activate_provider_front_and_back_aa318b74f734769f98fbb2c1f90046bf6}{
+\index{Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}!$\sim$ActivateProviderFrontAndBack@{$\sim$ActivateProviderFrontAndBack}}
+\index{$\sim$ActivateProviderFrontAndBack@{$\sim$ActivateProviderFrontAndBack}!Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}}
+\subsubsection[{$\sim$ActivateProviderFrontAndBack}]{\setlength{\rightskip}{0pt plus 5cm}virtual Neural::ActivateProviderFrontAndBack::$\sim$ActivateProviderFrontAndBack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_activate_provider_front_and_back_aa318b74f734769f98fbb2c1f90046bf6}
+
+
+Definition at line 31 of file ActivateProviderFrontAndBack.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_activate_provider_front_and_back_a8c307cb61c6b95103d4ecfc6c569015e}{
+\index{Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}!activateFromBack@{activateFromBack}}
+\index{activateFromBack@{activateFromBack}!Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}}
+\subsubsection[{activateFromBack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Neural::ActivateProviderFrontAndBack::activateFromBack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_activate_provider_front_and_back_a8c307cb61c6b95103d4ecfc6c569015e}
+
+
+Implements \hyperlink{class_neural_1_1_i_activation_front_and_back_a204810c0e42e7b33e0e3d464ea925b6b}{Neural::IActivationFrontAndBack}.
+
+
+
+Reimplemented in \hyperlink{class_neural_1_1_node_pass_through_a7f40f357a433661832fd354773cdd92b}{Neural::NodePassThrough$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_layer_ab7d152cd6cb287d145e4a371e1d2d9ca}{Neural::NodePerceptronLayer$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_target_a65c3f0c315fa41144468729b19371ee8}{Neural::NodePerceptronTarget$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_training_a2b0125c4dd40d69d8c9bd3879484b2af}{Neural::NodePerceptronTraining$<$ T $>$}, and \hyperlink{class_neural_1_1_node_result_a8666fda8bcd8abe7aa1f60d2ce5ba7cd}{Neural::NodeResult$<$ T, V $>$}.
+
+
+
+Definition at line 78 of file ActivateProviderFrontAndBack.h.
+
+\hypertarget{class_neural_1_1_activate_provider_front_and_back_a5da39bdcc01ca52cc74fbc2ad6a07fe1}{
+\index{Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}!activateFromFront@{activateFromFront}}
+\index{activateFromFront@{activateFromFront}!Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}}
+\subsubsection[{activateFromFront}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Neural::ActivateProviderFrontAndBack::activateFromFront (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_activate_provider_front_and_back_a5da39bdcc01ca52cc74fbc2ad6a07fe1}
+
+
+Implements \hyperlink{class_neural_1_1_i_activation_front_and_back_a214808de3ba71d87924e7baaaac55c93}{Neural::IActivationFrontAndBack}.
+
+
+
+Reimplemented in \hyperlink{class_neural_1_1_node_pass_through_a9456e17114a41371c8c111ae1ba88b01}{Neural::NodePassThrough$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_bias_abe8e6d1a10620e56bc41318581b50375}{Neural::NodePerceptronBias$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_layer_aa10fa97cf43ca754f12328601fb2d2f6}{Neural::NodePerceptronLayer$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_recall_aba78057a00733c9256e70e92ed6c8cec}{Neural::NodePerceptronRecall$<$ T $>$}, \hyperlink{class_neural_1_1_node_perceptron_target_a64d68059836b16229a14c7ed4028c084}{Neural::NodePerceptronTarget$<$ T $>$}, and \hyperlink{class_neural_1_1_node_result_a15262168019626591b80dbb9136bc129}{Neural::NodeResult$<$ T, V $>$}.
+
+
+
+Definition at line 70 of file ActivateProviderFrontAndBack.h.
+
+\hypertarget{class_neural_1_1_activate_provider_front_and_back_aac88ad8c77a1795521078e16425d3c33}{
+\index{Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}!getActivationConnection@{getActivationConnection}}
+\index{getActivationConnection@{getActivationConnection}!Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}}
+\subsubsection[{getActivationConnection}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf IActivatePtr} Neural::ActivateProviderFrontAndBack::getActivationConnection (
+\begin{DoxyParamCaption}
+\item[{{\bf ConnectionSite}}]{siteOnThis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_activate_provider_front_and_back_aac88ad8c77a1795521078e16425d3c33}
+
+
+Implements \hyperlink{class_neural_1_1_i_activate_provider_a56b4e3db7afe333eae21213c67fe9f34}{Neural::IActivateProvider}.
+
+
+
+Definition at line 35 of file ActivateProviderFrontAndBack.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_neural_1_1_activate_provider_front_and_back_abaaf9f8b1b2711b9c48f5beb33f7cc85}{
+\index{Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}!m\_\-ActivationConnections@{m\_\-ActivationConnections}}
+\index{m\_\-ActivationConnections@{m\_\-ActivationConnections}!Neural::ActivateProviderFrontAndBack@{Neural::ActivateProviderFrontAndBack}}
+\subsubsection[{m\_\-ActivationConnections}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ {\bf IActivatePtr} $>$ {\bf Neural::ActivateProviderFrontAndBack::m\_\-ActivationConnections}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_neural_1_1_activate_provider_front_and_back_abaaf9f8b1b2711b9c48f5beb33f7cc85}
+
+
+Reimplemented in \hyperlink{class_neural_1_1_node_perceptron_layer_a464ec62bde0bc4d28e81042b19d95bbd}{Neural::NodePerceptronLayer$<$ T $>$}.
+
+
+
+Definition at line 85 of file ActivateProviderFrontAndBack.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_activate_provider_front_and_back_8h}{ActivateProviderFrontAndBack.h}\end{DoxyCompactItemize}

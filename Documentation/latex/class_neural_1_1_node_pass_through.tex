@@ -1,0 +1,192 @@
+\hypertarget{class_neural_1_1_node_pass_through}{
+\section{Neural::NodePassThrough$<$ T $>$ Class Template Reference}
+\label{class_neural_1_1_node_pass_through}\index{Neural::NodePassThrough@{Neural::NodePassThrough}}
+}
+
+
+{\ttfamily \#include $<$NodePassThrough.h$>$}
+
+
+
+Inheritance diagram for Neural::NodePassThrough$<$ T $>$:
+
+
+Collaboration diagram for Neural::NodePassThrough$<$ T $>$:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_node}{INode}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_pass_through_a24652ff9763214e8e0d4a63c0cec169f}{INodePtr}
+\item 
+typedef boost::shared\_\-ptr$<$ \hyperlink{class_neural_1_1_i_connection}{IConnection}$<$ T $>$ $>$ \hyperlink{class_neural_1_1_node_pass_through_abad3481def64e79eb5d4c7e1a9155106}{IConnectionPtr}
+\item 
+typedef \hyperlink{class_neural_1_1_node}{Node}$<$ T $>$ \hyperlink{class_neural_1_1_node_pass_through_ab7c100222c3d2560f7fc152e22397d85}{Parent}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_neural_1_1_node_pass_through_a69ab1768f0c505b2afcc6ddbef8c674f}{NodePassThrough} ()
+\item 
+virtual \hyperlink{class_neural_1_1_node_pass_through_a52cc77ab8aaaa8e2ffbcff0908972c53}{$\sim$NodePassThrough} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_pass_through_af138e9aa6b5de64431e0298b7622b790}{receiveFromFront} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_pass_through_a9456e17114a41371c8c111ae1ba88b01}{activateFromFront} ()
+\item 
+virtual void \hyperlink{class_neural_1_1_node_pass_through_af9ddefb5fa4d40e26b468913302dcb95}{receiveFromBack} (T inputValue, \hyperlink{namespace_neural_a73b2763d14999ad4308dbf4246aa503f}{ConnectionHandle} hConnection)
+\item 
+virtual void \hyperlink{class_neural_1_1_node_pass_through_a7f40f357a433661832fd354773cdd92b}{activateFromBack} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class Neural::NodePassThrough$<$ T $>$}
+
+
+
+Definition at line 21 of file NodePassThrough.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_neural_1_1_node_pass_through_abad3481def64e79eb5d4c7e1a9155106}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!IConnectionPtr@{IConnectionPtr}}
+\index{IConnectionPtr@{IConnectionPtr}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{IConnectionPtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf IConnection}$<$T$>$ $>$ {\bf Neural::NodePassThrough}$<$ T $>$::{\bf IConnectionPtr}}}
+\label{class_neural_1_1_node_pass_through_abad3481def64e79eb5d4c7e1a9155106}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_ac797b836161befa12cd9897926139c14}{Neural::Node$<$ T $>$}.
+
+
+
+Definition at line 25 of file NodePassThrough.h.
+
+\hypertarget{class_neural_1_1_node_pass_through_a24652ff9763214e8e0d4a63c0cec169f}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!INodePtr@{INodePtr}}
+\index{INodePtr@{INodePtr}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{INodePtr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef boost::shared\_\-ptr$<$ {\bf INode}$<$T$>$ $>$ {\bf Neural::NodePassThrough}$<$ T $>$::{\bf INodePtr}}}
+\label{class_neural_1_1_node_pass_through_a24652ff9763214e8e0d4a63c0cec169f}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_node_ae2242f73792c89cebc4403da7b2b1a7e}{Neural::Node$<$ T $>$}.
+
+
+
+Definition at line 24 of file NodePassThrough.h.
+
+\hypertarget{class_neural_1_1_node_pass_through_ab7c100222c3d2560f7fc152e22397d85}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!Parent@{Parent}}
+\index{Parent@{Parent}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{Parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf Node}$<$T$>$ {\bf Neural::NodePassThrough}$<$ T $>$::{\bf Parent}}}
+\label{class_neural_1_1_node_pass_through_ab7c100222c3d2560f7fc152e22397d85}
+
+
+Definition at line 26 of file NodePassThrough.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_neural_1_1_node_pass_through_a69ab1768f0c505b2afcc6ddbef8c674f}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!NodePassThrough@{NodePassThrough}}
+\index{NodePassThrough@{NodePassThrough}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{NodePassThrough}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Neural::NodePassThrough}$<$ T $>$::{\bf NodePassThrough} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_neural_1_1_node_pass_through_a69ab1768f0c505b2afcc6ddbef8c674f}
+
+
+Definition at line 28 of file NodePassThrough.h.
+
+\hypertarget{class_neural_1_1_node_pass_through_a52cc77ab8aaaa8e2ffbcff0908972c53}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!$\sim$NodePassThrough@{$\sim$NodePassThrough}}
+\index{$\sim$NodePassThrough@{$\sim$NodePassThrough}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{$\sim$NodePassThrough}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual {\bf Neural::NodePassThrough}$<$ T $>$::$\sim${\bf NodePassThrough} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_pass_through_a52cc77ab8aaaa8e2ffbcff0908972c53}
+
+
+Definition at line 33 of file NodePassThrough.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_neural_1_1_node_pass_through_a7f40f357a433661832fd354773cdd92b}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!activateFromBack@{activateFromBack}}
+\index{activateFromBack@{activateFromBack}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{activateFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePassThrough}$<$ T $>$::activateFromBack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_pass_through_a7f40f357a433661832fd354773cdd92b}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_a8c307cb61c6b95103d4ecfc6c569015e}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 61 of file NodePassThrough.h.
+
+\hypertarget{class_neural_1_1_node_pass_through_a9456e17114a41371c8c111ae1ba88b01}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!activateFromFront@{activateFromFront}}
+\index{activateFromFront@{activateFromFront}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{activateFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePassThrough}$<$ T $>$::activateFromFront (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_pass_through_a9456e17114a41371c8c111ae1ba88b01}
+
+
+Reimplemented from \hyperlink{class_neural_1_1_activate_provider_front_and_back_a5da39bdcc01ca52cc74fbc2ad6a07fe1}{Neural::ActivateProviderFrontAndBack}.
+
+
+
+Definition at line 45 of file NodePassThrough.h.
+
+\hypertarget{class_neural_1_1_node_pass_through_af9ddefb5fa4d40e26b468913302dcb95}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!receiveFromBack@{receiveFromBack}}
+\index{receiveFromBack@{receiveFromBack}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{receiveFromBack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePassThrough}$<$ T $>$::receiveFromBack (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_pass_through_af9ddefb5fa4d40e26b468913302dcb95}
+
+
+Implements \hyperlink{class_neural_1_1_i_receive_from_front_and_back_ae1f573476636f59aea5c862eb58479e5}{Neural::IReceiveFromFrontAndBack$<$ T $>$}.
+
+
+
+Definition at line 53 of file NodePassThrough.h.
+
+\hypertarget{class_neural_1_1_node_pass_through_af138e9aa6b5de64431e0298b7622b790}{
+\index{Neural::NodePassThrough@{Neural::NodePassThrough}!receiveFromFront@{receiveFromFront}}
+\index{receiveFromFront@{receiveFromFront}!Neural::NodePassThrough@{Neural::NodePassThrough}}
+\subsubsection[{receiveFromFront}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ virtual void {\bf Neural::NodePassThrough}$<$ T $>$::receiveFromFront (
+\begin{DoxyParamCaption}
+\item[{T}]{inputValue, }
+\item[{{\bf ConnectionHandle}}]{hConnection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_neural_1_1_node_pass_through_af138e9aa6b5de64431e0298b7622b790}
+
+
+Implements \hyperlink{class_neural_1_1_i_receive_from_front_and_back_afa3a6ff397a94056669e42184f6ada33}{Neural::IReceiveFromFrontAndBack$<$ T $>$}.
+
+
+
+Definition at line 37 of file NodePassThrough.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/Users/seimon/Development/NeuralNetworkApplication/\hyperlink{_node_pass_through_8h}{NodePassThrough.h}\end{DoxyCompactItemize}
