@@ -96,7 +96,6 @@ int main (int argc, char * argv[])
 				const std::string templateFilename( vm["template"].as<std::string>() );
 				const std::string networkFilename( vm["network"].as<std::string>() );
 				
-                // hello
 				boost::progress_timer progTimer;
 				retVal = NeuralNetworkApp().createNetwork( templateFilename, networkFilename, randomSeed );
 			}
