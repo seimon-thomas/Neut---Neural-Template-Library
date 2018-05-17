@@ -115,11 +115,15 @@ namespace Neural
 		void serialize( INodePtr pNode, const std::string& fileName) const
 		{
 			boost::property_tree::ptree nodeConfig = serialize( pNode );
-			
-			boost::property_tree::xml_writer_settings<char> writerSettings( '\t', 1 );
+
+// Following removed because it causes a compile error with the new version of XCode
+//			boost::property_tree::xml_writer_settings<char> writerSettings( '\t', 1 );
 
 //			write_xml( std::cout, nodeConfig, writerSettings );
-			write_xml( fileName, nodeConfig, std::locale(), writerSettings );
+
+            // Following removed because it causes a compile error with the new version of XCode (related to error few lines previous)
+//            write_xml( fileName, nodeConfig, std::locale(), writerSettings );
+            write_xml( fileName, nodeConfig, std::locale() );
 		}
 		
 		boost::property_tree::ptree serialize( INodePtr pNode ) const

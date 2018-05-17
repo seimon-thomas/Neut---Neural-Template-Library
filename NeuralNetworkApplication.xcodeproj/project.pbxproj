@@ -454,7 +454,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "NeuralNetworkApplication" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -551,19 +551,16 @@
 		1DEB923608733DC60010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/boost_1_54_0,
+					/usr/local/include/boost,
 					/usr/local/include,
 				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/boost_1_54_0/stage/lib,
-					/usr/local/lib,
-					/Users/seimon/Development/QtSDK/Desktop/Qt/473/gcc/lib,
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lboost_system",
@@ -572,13 +569,14 @@
 					"-lboost_program_options",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = /usr/local/boost_1_54_0;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/boost;
 			};
 			name = Debug;
 		};
 		1DEB923708733DC60010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_ENABLE_SSE41_EXTENSIONS = NO;
@@ -588,14 +586,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					/usr/local/boost_1_54_0,
+					/usr/local/include/boost,
 					/usr/local/include,
 				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/boost_1_54_0/stage/lib,
-					/usr/local/lib,
-					/Users/seimon/Development/QtSDK/Desktop/Qt/473/gcc/lib,
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				LLVM_LTO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -605,7 +599,7 @@
 					"-lboost_program_options",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = /usr/local/boost_1_54_0;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include/boost;
 			};
 			name = Release;
 		};
