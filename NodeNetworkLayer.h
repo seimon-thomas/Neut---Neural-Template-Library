@@ -63,11 +63,11 @@ namespace Neural
 	public:
 		typedef boost::shared_ptr< std::vector< typename INode<T>::INodePtr> >	VectorINodePtr;
 
-		NodeNetworkLayer():NodeContainer<T>(0) // 0 Num threads means check
+        NodeNetworkLayer():NodeContainer<T>(0)
 		{
 		};
 
-		NodeNetworkLayer(const boost::property_tree::ptree& nodeConfig):NodeContainer<T>(2)
+		NodeNetworkLayer(const boost::property_tree::ptree& nodeConfig):NodeContainer<T>(0)
 		{
 		 // No intenal attributes to set
 		};
