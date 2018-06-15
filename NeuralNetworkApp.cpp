@@ -31,7 +31,7 @@
 #include <cppunit/BriefTestProgressListener.h>
 
 #include <boost/date_time.hpp>
-#include <boost/timer.hpp>
+#include <boost/timer/timer.hpp>
 
 #include "NeuralNetworkApp.h"
 #include "NodeSerializer.h"
@@ -330,10 +330,12 @@ int  NeuralNetworkApp::trainNetwork( const std::string& inputFilename,
 	// Train the network
 	//
 	unsigned long iterations = 0;
-    boost::timer epochTimer;
 	do
 	{
- 
+        {
+            
+         boost::timer::cpu_timer epochTimer;
+
 		//
 		// Reinit error
 		//
@@ -373,7 +375,7 @@ int  NeuralNetworkApp::trainNetwork( const std::string& inputFilename,
 		++iterations;
         if(!gnuplot)
         {
-            double epochTime = epochTimer.elapsed();
+            std::string sEpochTime = epochTimer.format();
             
             std::cout.precision(std::numeric_limits<double>::digits10 + 2);
             // TODO: Refactor
@@ -385,15 +387,14 @@ int  NeuralNetworkApp::trainNetwork( const std::string& inputFilename,
             std::cout << "RMS Error: " << sqrt(rmsError/((double)epochSize));
             
             std::cout.precision( 6 );
-            std::cout << "    Time for epoch: " << epochTime << "   \r";
+            std::cout << "    Time for epoch: " << sEpochTime << "   \r";
             
             if( saveImminent ) std::cout << "\n\r";
             
             std::cout.flush();
             
-            epochTimer.restart();
         }
-    
+        }
 	}
 	while( (sqrt(rmsError/((double)epochSize)) > errorThreshold) && !NeuralNetworkApp::m_Finish );	
 	if(gnuplot)
