@@ -40,6 +40,7 @@ namespace Neural
 MAKE__EXEPTION_CLASS( Exception, std::runtime_error )
 MAKE__EXEPTION_CLASS( ExceptionMethodNotImplimented, Exception )
 MAKE__EXEPTION_CLASS( UnknownException, Exception )
+MAKE__EXEPTION_CLASS( TestException, Exception )
 };
 
 #define THROW_EXCEPTION( MessageStream )                                                             \
